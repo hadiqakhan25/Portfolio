@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadiqa Khan | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+        :root {
+            --primary: #e11d48;
+            /* Crimson Red */
+            --dark: #020617;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--dark);
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        /* Custom Cursor Animation Effect */
+        .blob {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(225, 29, 72, 0.15) 0%, rgba(2, 6, 23, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(80px);
+            animation: move 20s infinite alternate;
+        }
+
+        @keyframes move {
+            from {
+                transform: translate(-10%, -10%);
+            }
+
+            to {
+                transform: translate(20%, 20%);
+            }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(225, 29, 72, 0.05);
+            border-color: rgba(225, 29, 72, 0.4);
+            transform: translateY(-10px) scale(1.01);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #e11d48);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-active {
+            color: var(--primary) !important;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        /* Smooth Section Transition */
+        section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        section.aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blob"></div>
+
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl">
+        <div class="glass-card rounded-full px-8 py-4 flex justify-between items-center shadow-2xl">
+            <a href="#" class="text-xl font-extrabold tracking-tighter">HADIQA<span class="text-rose-600">.</span></a>
+            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#about" class="hover:text-rose-500 transition">About</a>
+                <a href="#experience" class="hover:text-rose-500 transition">Experience</a>
+                <a href="#skills" class="hover:text-rose-500 transition">Skills</a>
+                <a href="#projects" class="hover:text-rose-500 transition">Projects</a>
+            </div>
+            <a href="mailto:hadiqakhanum21@gmail.com"
+                class="bg-rose-600 text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-rose-700 transition shadow-lg shadow-rose-600/20">CONTACT</a>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div
+                class="inline-block px-4 py-1.5 mb-6 rounded-full border border-rose-500/30 bg-rose-500/10 text-rose-500 text-xs font-bold tracking-widest animate-bounce">
+                READY TO INNOVATE
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight">
+                Crafting <span class="text-gradient">Logic</span> With <br> Modern <span
+                    class="text-rose-600 italic">Vision.</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Hi, I'm Hadiqa Khan. A Software Engineer student blending technical PHP/Laravel expertise with
+                high-level institutional coordination.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#projects"
+                    class="px-8 py-4 bg-rose-600 rounded-xl font-bold hover:bg-rose-700 transition-all shadow-xl shadow-rose-600/30">View
+                    My Work</a>
+                <div class="flex items-center gap-4 px-6 py-4 glass-card rounded-xl">
+                    <a href="https://github.com/hadiqakhan" class="hover:text-rose-500 transition text-2xl"><i
+                            class="fab fa-github"></i></a>
+                    <div class="h-6 w-px bg-slate-700"></div>
+                    <a href="#" class="hover:text-rose-500 transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="experience" class="py-24" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-12 flex items-center gap-4">
+                        <span class="w-12 h-px bg-rose-600"></span> Career Path
+                    </h2>
+                    <div class="space-y-12">
+                        <div class="relative pl-8 border-l border-rose-600/30">
+                            <div
+                                class="absolute -left-1.5 top-1.5 w-3 h-3 bg-rose-600 rounded-full shadow-[0_0_15px_#e11d48]">
+                            </div>
+                            <span class="text-rose-500 font-bold text-sm tracking-widest">2025 - PRESENT</span>
+                            <h3 class="text-2xl font-bold mt-2">Career Counselor</h3>
+                            <p class="text-slate-400 mb-4">Aptech Gulshan 2, Karachi</p>
+                            <ul class="text-slate-500 space-y-2 text-sm">
+                                <li>• Leading academic sessions & enrollment strategies.</li>
+                                <li>• Managing institutional portals and student data syncing.</li>
+                                <li>• Social Media & Admissions marketing automation.</li>
+                            </ul>
+                        </div>
+                        <div class="relative pl-8 border-l border-slate-800">
+                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-slate-800 rounded-full"></div>
+                            <span class="text-slate-600 font-bold text-sm tracking-widest">2024 - 2025</span>
+                            <h3 class="text-2xl font-bold mt-2">Academic Coordinator</h3>
+                            <p class="text-slate-400">Aptech Gulshan 2, Karachi</p>
+                            <p class="text-sm text-slate-500 mt-2 italic">Optimized faculty-student communication and
+                                compliance standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-10 rounded-[3rem]">
+                    <h2 class="text-3xl font-extrabold mb-8">Academic Background</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-rose-500 font-bold">Diploma in Software Engineering</h4>
+                            <p class="text-xl font-semibold">Aptech Gulshan 2 (Grad: 2026)</p>
+                        </div>
+                        <div class="h-px bg-white/5"></div>
+                        <div>
+                            <h4 class="text-slate-500 font-bold uppercase text-xs tracking-widest">Intermediate</h4>
+                            <p class="font-semibold">Govt. Degree Science College (2024)</p>
+                        </div>
+                        <div class="h-px bg-white/5"></div>
+                        <div>
+                            <h4 class="text-slate-500 font-bold uppercase text-xs tracking-widest">Matriculation</h4>
+                            <p class="font-semibold">Metropolis Education System (2022)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-950/50" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-16">Technical Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <div class="glass-card p-8 rounded-2xl group hover:border-rose-500/50">
+                    <i class="fab fa-laravel text-5xl mb-4 group-hover:text-rose-500 transition"></i>
+                    <p class="font-bold">Laravel</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-rose-500/50">
+                    <i class="fab fa-php text-5xl mb-4 group-hover:text-rose-500 transition"></i>
+                    <p class="font-bold">PHP</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-rose-500/50">
+                    <i class="fas fa-database text-5xl mb-4 group-hover:text-rose-500 transition"></i>
+                    <p class="font-bold">MySQL</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-rose-500/50">
+                    <i class="fab fa-js text-5xl mb-4 group-hover:text-rose-500 transition"></i>
+                    <p class="font-bold">JavaScript</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-rose-500/50">
+                    <i class="fab fa-bootstrap text-5xl mb-4 group-hover:text-rose-500 transition"></i>
+                    <p class="font-bold">Bootstrap</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl group hover:border-rose-500/50">
+                    <i class="fab fa-git-alt text-5xl mb-4 group-hover:text-rose-500 transition"></i>
+                    <p class="font-bold">Git</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <span class="text-rose-500 font-bold tracking-[0.2em] uppercase text-xs">My Portfolio</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mt-2 italic text-gradient">Featured Work</h2>
+                </div>
+                <p class="text-slate-500 max-w-md md:text-right">
+                    Explore my latest web development projects, ranging from institutional portals to custom PHP/Laravel
+                    applications.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="glass-card group rounded-[2.5rem] overflow-hidden p-3" data-aos="zoom-in">
+                    <div class="relative overflow-hidden rounded-[2rem] h-64 bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition duration-700 opacity-60 group-hover:opacity-100"
+                            alt="Student Portal">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <span
+                                class="px-3 py-1 bg-rose-600 text-[10px] font-bold rounded-full uppercase">Laravel</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-rose-500 transition">Academic Hub Portal
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-6 line-clamp-2">A comprehensive management system for
+                            attendance, progress tracking, and faculty coordination.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">MySQL</span>
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">Bootstrap</span>
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">jQuery</span>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-white/5 pt-4">
+                            <a href="#"
+                                class="text-sm font-bold flex items-center gap-2 hover:text-rose-500 transition">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a href="#" class="text-sm font-bold flex items-center gap-2 text-rose-500 hover:underline">
+                                Live Demo <i class="fas fa-external-link-alt text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card group rounded-[2.5rem] overflow-hidden p-3" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="relative overflow-hidden rounded-[2rem] h-64 bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-2 transition duration-700 opacity-60 group-hover:opacity-100"
+                            alt="Automation Tool">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <span class="px-3 py-1 bg-rose-600 text-[10px] font-bold rounded-full uppercase">PHP</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-rose-500 transition">Auto-Notify Engine</h3>
+                        <p class="text-slate-400 text-sm mb-6 line-clamp-2">Custom PHP notification system utilizing
+                            PHPMailer for automated student enrollment alerts.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">PHPMailer</span>
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">Logic</span>
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">Backend</span>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-white/5 pt-4">
+                            <a href="#"
+                                class="text-sm font-bold flex items-center gap-2 hover:text-rose-500 transition">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a href="#" class="text-sm font-bold flex items-center gap-2 text-rose-500 hover:underline">
+                                Docs <i class="fas fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card group rounded-[2.5rem] overflow-hidden p-3" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div class="relative overflow-hidden rounded-[2rem] h-64 bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-60 group-hover:opacity-100"
+                            alt="Modern Dashboard">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <span
+                                class="px-3 py-1 bg-rose-600 text-[10px] font-bold rounded-full uppercase">Frontend</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-rose-500 transition">VibeFlow Dashboard</h3>
+                        <p class="text-slate-400 text-sm mb-6 line-clamp-2">Modern UI design using Bootstrap 5, Swiper
+                            JS, and Wow JS for fluid user experiences.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">SwiperJS</span>
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">WowJS</span>
+                            <span
+                                class="text-[10px] bg-white/5 px-2 py-1 rounded border border-white/10 uppercase font-mono">CSS3</span>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-white/5 pt-4">
+                            <a href="#"
+                                class="text-sm font-bold flex items-center gap-2 hover:text-rose-500 transition">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                            <a href="#" class="text-sm font-bold flex items-center gap-2 text-rose-500 hover:underline">
+                                View UI <i class="fas fa-eye text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 mt-20">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <p class="text-slate-500 text-sm tracking-widest uppercase mb-2">Let's build the future</p>
+                <h3 class="text-2xl font-black">hadiqakhanum21@gmail.com</h3>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-slate-600 text-sm">&copy; 2025 Hadiqa Khan. Built with Code & Passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Animations
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+
+        // Sticky Navbar Glass Effect
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scale-95');
+            } else {
+                nav.classList.remove('scale-95');
+            }
+        });
+    </script>
+</body>
+
+</html>
